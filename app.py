@@ -4,7 +4,7 @@ import pickle
 
 
 app = Flask(__name__)
-model = pickle.load(open('/content/drive/MyDrive/Colab Notebooks/AI ML TRAINING/MODEL/houseprediction.pkl','rb')) 
+model = pickle.load(open('houseprediction.pkl','rb')) 
 
 @app.route('/')
 def home():
